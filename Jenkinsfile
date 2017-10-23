@@ -5,7 +5,7 @@ node {
         sh "cd RESTful-api"
    }
    stage('Build') {
-        mvn spring-boot:run -Drun.profiles=prod
+        sh "mvn spring-boot:run -Drun.profiles=prod"
    }
    stage('Tests') {
       sh "mvn spring-boot:run -Drun.profiles=test"
