@@ -8,13 +8,14 @@ node {
    	sh "mvn clean install"
         dir 'RESTful-api'
    }
-   
+
+   stage('Deploy') {
+       echo 'TODO.........'
+   }
+
    stage('Tests') {
-      	junit '**/target/surefire-reports/TEST-*.xml'
+      	junit 'target/surefire-reports/TEST-*.xml'
       	archive 'target/*.jar'
    }
 
-   stage('Deploy') {
-       echo 'TODO'
-   }
 }
