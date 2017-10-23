@@ -5,7 +5,7 @@ node {
    }
    stage('Build Modules') {
    	sh "mvn clean install"
-        cd RESTful-api
+        dir RESTful-api
    }
    stage('Build RESTful API') {
         sh "mvn spring-boot:run -Drun.profiles=prod"
