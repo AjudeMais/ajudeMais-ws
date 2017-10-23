@@ -1,10 +1,13 @@
 node {
    stage('Preparation') {
    	git 'https://github.com/AjudeMais/ajudeMais-ws.git'
-   	sh "mvn clean install"
-        sh "cd RESTful-api"
+
    }
-   stage('Build') {
+   stage('Build Modules') {
+   	sh "mvn clean install"
+        cd RESTful-api
+   }
+   stage('Build RESTful API') {
         sh "mvn spring-boot:run -Drun.profiles=prod"
    }
    stage('Tests') {
