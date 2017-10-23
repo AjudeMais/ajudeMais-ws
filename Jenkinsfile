@@ -6,7 +6,6 @@ node {
 
    stage('Build Modules') {
    	sh "mvn clean install"
-        dir 'RESTful-api'
    }
 
    stage('Deploy') {
@@ -14,7 +13,7 @@ node {
    }
 
    stage('Tests') {
-      	junit 'target/surefire-reports/TEST-*.xml'
+      	junit '**/target/surefire-reports/TEST-*.xml'
       	archive 'target/*.jar'
    }
 
