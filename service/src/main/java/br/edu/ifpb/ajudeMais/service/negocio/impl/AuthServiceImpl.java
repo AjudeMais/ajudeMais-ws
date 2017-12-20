@@ -198,10 +198,6 @@ public class AuthServiceImpl implements AuthService {
 				if (p.contains(Grupo.DOADOR.name()) || p.contains(Grupo.MENSAGEIRO.name())) {
 					throw new AccessDeniedException(msg);
 				}
-			} else {
-				if (p.contains(Grupo.ADMIN.name()) || p.contains(Grupo.INSTITUICAO.name())) {
-					throw new AccessDeniedException(msg);
-				}
 			}
 		}
 	}
