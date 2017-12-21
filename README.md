@@ -1,13 +1,10 @@
-Ajude Mais - WS
-===============
+# Ajude Mais - API RESTful
+API diponível em: [ajudemais.github.io/ajudeMais-web](ajudemais.github.io/ajudeMais-web)
 
 [![Build Status](https://travis-ci.org/AjudeMais/AjudeMais.svg?branch=master)](https://travis-ci.org/AjudeMais/AjudeMais)
-
-
-API RESTful Ajude Mais.
-
  
-### ESTRUTURA
+# ESTRUTURA
+
 Projeto subdividido em módulos usando o maven https://maven.apache.org/guides/mini/guide-multiple-modules.html 
 ```
 ├── ajudeMais-ws/
@@ -48,7 +45,14 @@ Projeto subdividido em módulos usando o maven https://maven.apache.org/guides/m
 ├── pom.xml
 ```
 
-REQUISITOS
-===============
-* JDK 8
+# REQUISITOS
+* JDK 8;
+* Apache Maven;
+* Heroku Plugin (publicar api no heroku);
+
+# USO
+#### Comandos básicos para uso da aplicação
+* git clone https://github.com/AjudeMais/ajudeMais-ws.git;
+* sh run dev (executar aplicação localmente);
+* sh run prod (publicar aplicação em produção);
  
