@@ -21,6 +21,6 @@ elif [ $1 = "prod" ]; then
 
 
 else
-  mvn spring-boot:run
+  echo "no parameters passed..." 
 fi
 
