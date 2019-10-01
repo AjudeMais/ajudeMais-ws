@@ -1,7 +1,5 @@
 # Ajude Mais - API RESTful
 API diponível em: [ajudemais.github.io/ajudeMais-web](ajudemais.github.io/ajudeMais-web)
-
-[![Build Status](https://travis-ci.org/AjudeMais/AjudeMais.svg?branch=master)](https://travis-ci.org/AjudeMais/AjudeMais)
  
 # ESTRUTURA
 
