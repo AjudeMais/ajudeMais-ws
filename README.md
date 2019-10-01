@@ -1,7 +1,5 @@
 # Ajude Mais - API RESTful
 API diponível em: [ajudemais.github.io/ajudeMais-web](ajudemais.github.io/ajudeMais-web)
-
-[![Build Status](https://travis-ci.org/AjudeMais/AjudeMais.svg?branch=master)](https://travis-ci.org/AjudeMais/AjudeMais)
  
 # ESTRUTURA
 
@@ -55,4 +53,6 @@ Projeto subdividido em módulos usando o maven https://maven.apache.org/guides/m
 * git clone https://github.com/AjudeMais/ajudeMais-ws.git;
 * sh run dev (executar aplicação localmente);
 * sh run prod (publicar aplicação em produção);
+
+
  
